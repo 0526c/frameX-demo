@@ -13,7 +13,6 @@ export default function HomePage() {
       <GrainBackground />
 
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6">
-        {/* Logo */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -21,13 +20,12 @@ export default function HomePage() {
           className="text-center mb-12"
         >
           <motion.div
-            className="relative inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-gold to-gold-bright rounded-2xl mb-6 mx-auto"
+            className="relative inline-flex items-center justify-center w-20 h-20 bg-brand-red rounded-2xl mb-6 mx-auto"
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           >
-            <span className="text-3xl font-bold text-void">M</span>
+            <span className="text-3xl font-bold text-white">X</span>
             
-            {/* Shine effect */}
             <motion.div
               className="absolute inset-0 rounded-2xl overflow-hidden"
               initial={{ opacity: 0 }}
@@ -49,7 +47,6 @@ export default function HomePage() {
           </p>
         </motion.div>
 
-        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -67,13 +64,10 @@ export default function HomePage() {
             <Sparkles className="w-5 h-5" />
             开始创作
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            
-            {/* Button shimmer */}
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/30 to-transparent" />
           </motion.button>
         </motion.div>
 
-        {/* Features hint */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -94,7 +88,6 @@ export default function HomePage() {
           </span>
         </motion.div>
 
-        {/* Footer */}
         <motion.footer
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
