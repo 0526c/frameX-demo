@@ -27,7 +27,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -46,13 +45,11 @@ body {
   background: rgba(212, 168, 75, 0.5);
 }
 
-/* Selection */
 ::selection {
   background: rgba(212, 168, 75, 0.3);
   color: var(--cream);
 }
 
-/* Film grain animation */
 @keyframes grain {
   0%, 100% { transform: translate(0, 0); }
   10% { transform: translate(-2%, -2%); }
@@ -66,19 +63,11 @@ body {
   90% { transform: translate(-2%, -2%); }
 }
 
-/* Float animation */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-/* Shimmer animation */
 @keyframes shimmer {
   0% { transform: translateX(-100%) rotate(25deg); }
   100% { transform: translateX(100%) rotate(25deg); }
 }
 
-/* Focus styles */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
@@ -87,7 +76,6 @@ textarea:focus-visible {
   outline-offset: 2px;
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
