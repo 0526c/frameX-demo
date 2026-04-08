@@ -28,7 +28,6 @@ export const durations = [
   { value: 1, name: "1分钟" },
   { value: 3, name: "3分钟" },
   { value: 5, name: "5分钟" },
-  { value: 10, name: "10分钟" },
 ];
 
 export const defaultConfig: StoryConfig = {
@@ -86,7 +85,7 @@ export function generateMockScript(genre: string): ScriptScene[] {
     ],
     thriller: [
       { scene: "INT. 房间 — 深夜", action: "时钟滴答声在黑暗中格外清晰。窗帘被风吹动，月光在墙上投下摇曳的影子。" },
-      { character: "??", dialog: "（电话铃声）" },
+      { action: "（电话铃声）" },
       { character: "主角", dialog: "（接起电话，声音颤抖）喂...？" },
       { action: "电话那头只有沉重的呼吸声。" },
     ],
